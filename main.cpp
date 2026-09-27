@@ -1,56 +1,24 @@
 #include <iostream>
-
+#include <cmath>
 using namespace std;
 
 int main()
 {
-      string brand[5]
-    {
-        "bmw",
-        "audi",
-        "mercedes",
-        "porsche",
-        "mazda"
-    };
+    const double PI = 3.14159265359;
+    double a, b;
 
-    string model[20]
-    {
-        "m4",
-        "m8",
-        "m2",
-        "e96",
-        "a3",
-        "a1",
-        "a7",
-        "a5",
-        "glc",
-        "cla",
-        "c-klasa",
-        "b-klasa",
-        "cayan",
-        "911",
-        "911 Carrera",
-        "Panamera",
-        "cx30",
-        "cx50",
-        "cx-60",
-        "cx5"
-    };
+    cout << "Unesite prvu katetu: ";
+    cin >> a;
 
+    cout << "Unesite drugu katetu: ";
+    cin >> b;
 
-    for(int i = 0; i < 5; i++)
-{
-    cout << "Marka " << brand[i] << " Modeli: ";
+    auto c = sqrt(a * a + b * b);
 
-    for(int j = 0; j < 4; j++)
-    {
-        cout << model[i * 4 + j] << " ";
-    }
-
-    cout << endl;
-}
-
-
+    cout << "Hipotenuza je: " << c << endl;
+    cout << "Opseg trokuta je: " << a + b + c << endl;
+    cout << "Povrsina trokuta je: " << a * b / 2 << endl;
+    cout << "Kut nasuprot kateti a je: " << asin(a / c) * 180 / PI << " stupnjeva";
 
     return 0;
 }
