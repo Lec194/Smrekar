@@ -1,0 +1,15 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+void mojaFunkcija(string userName = "John Doe"){
+cout << "Moje ime je " << userName << " i učenik sam 2E razreda!" << endl;
+}
+int main() {
+    
+    mojaFunkcija();
+    mojaFunkcija("Marica");
+
+    
+    return 0;
+}
