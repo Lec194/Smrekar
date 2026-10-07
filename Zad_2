@@ -1,0 +1,33 @@
+#include <iostream>
+#include <cmath>
+#include <cstdio>
+
+using namespace std;
+
+int main()
+{
+    int a;
+
+    cout<<"Unesi cijeli broj; "<<endl;
+    cin >> a;
+
+    if (a % 2 == 0){
+        cout<<"Broj je paran: "<<a<<endl;
+
+    }
+    else
+    {
+
+        cout<<"Broj je neparan: "<<a<<endl;
+    }
+
+    cout<<"Apsolutna vrijednost broja je: "<<abs(a)<<endl;
+     cout<<"Kvadrat broja je: "<<a*a<<endl;
+
+
+
+
+
+
+    return 0;
+}
